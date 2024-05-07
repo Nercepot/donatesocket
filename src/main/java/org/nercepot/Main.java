@@ -74,7 +74,7 @@ public class Main {
     private static void processDonation(Object... arg0) throws JSONException {
         JSONObject json = new JSONObject((String) arg0[0]);
 
-        String donationAmount = json.getString("amount");
+        Integer donationAmount = json.getInt("amount");
         String donationUsername = json.getString("username");
 
         // Здесь может быть логика обработки доната
