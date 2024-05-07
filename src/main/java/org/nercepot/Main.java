@@ -67,7 +67,7 @@ public class Main {
 
     private static void connect() throws JSONException {
         socket.emit("add-user", new JSONObject()
-                .put("token", "0qIGlOGiRthYZvt9hzS9")
+                .put("token", "") //token
                 .put("type", "alert_widget"));
     }
 
