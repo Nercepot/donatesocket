@@ -76,9 +76,18 @@ public class Main {
 
         Integer donationAmount = json.getInt("amount");
         String donationUsername = json.getString("username");
+        String donationBullding = json.getString("billing_system");
 
         // Здесь может быть логика обработки доната
+        System.out.println("--------------------------------------------");
+        System.out.println(json);
+        System.out.println("--------------------------------------------");
+        
+        //Привер вывода
+        System.out.println("--------------------------------------------");
         System.out.println("Donation received from: " + donationUsername);
         System.out.println("Amount: " + donationAmount);
+        System.out.println("Bullding: " + donationBullding);
+        System.out.println("--------------------------------------------");
     }
 }
